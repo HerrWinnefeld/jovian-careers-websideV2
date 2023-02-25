@@ -13,13 +13,25 @@
     </style>
   </head>
   <body>
+    {% include 'nav.html' %}
     <div class="container" >
      <h1 class="text-center">{{company_name}} Careers</h1>
     <img class="img-fluid" id="banner" src="https://jovian-careers-webside.herrwinnefeld.repl.co/static/banner2.jpg">
     <h2 class="text-center">About Jovian</h2>
+     
+      
+      
+      <div class="row" style="margin-bottom:16px;">
+        
+    <div class="col-md-6">
     <p class="lead">
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
     </p>
+    </div>
+        <div class="d-none d-md-block col-md-6">
+<img src="static/people.jpg" style="height:320px;border-radius:4px"
+  </div>
+        </div>
     <h2 class="text-center mt-2 mb-4">Job Openings</h2>
   
     <p>
@@ -28,9 +40,10 @@
       {% endfor %}
     </p>
       <div class="text-center" >
-        <button class="btn btn-primary btn-lg">contact us</button>
-          <p class="mt-4">Copyright 2022, Jovian</p>
+        <a class="btn btn-primary btn-lg" href=" mailto:mwinnefeld@web.de?subject=Kontakt&body=Hallo%20ich%20m%C3%B6chte%20Kontakt%20mit%20ihnen%20aufnehmen.%20Diesen%20Link%20habe%20ich%20auf%20der%20Jovian%20Seite%20gefunden. ">contact us</a>
+      
         </div>
       </div>
+      {% include 'footer.html' %}
   </body>
 </html>
